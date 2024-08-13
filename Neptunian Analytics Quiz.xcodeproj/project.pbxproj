@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C05C7302C68F8D800E7CC4B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C05C72F2C68F8D800E7CC4B /* Question.swift */; };
+		1C05C7342C68FB8B00E7CC4B /* ChoiceTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C05C7332C68FB8B00E7CC4B /* ChoiceTextView.swift */; };
+		1C92518F2C5E5C7300CB3520 /* Neptunian_Analytics_QuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92518E2C5E5C7300CB3520 /* Neptunian_Analytics_QuizApp.swift */; };
+		1C9251912C5E5C7300CB3520 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9251902C5E5C7300CB3520 /* GameView.swift */; };
+		1C9251932C5E5C7400CB3520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9251922C5E5C7400CB3520 /* Assets.xcassets */; };
+		1C9251962C5E5C7400CB3520 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9251952C5E5C7400CB3520 /* Preview Assets.xcassets */; };
+		1CF143B02C6A131100DA34C3 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF143AF2C6A131100DA34C3 /* Game.swift */; };
+		1CF143D42C6A7CD500DA34C3 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF143D32C6A7CD500DA34C3 /* WelcomeView.swift */; };
+		1CF143D62C6A82EA00DA34C3 /* GameColour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF143D52C6A82EA00DA34C3 /* GameColour.swift */; };
+		1CF143D82C6A83C900DA34C3 /* BottomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF143D72C6A83C900DA34C3 /* BottomTextView.swift */; };
+		1CF143DB2C6AAC7200DA34C3 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF143DA2C6AAC7200DA34C3 /* GameViewModel.swift */; };
+		1CF143DD2C6AAF8A00DA34C3 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF143DC2C6AAF8A00DA34C3 /* QuestionView.swift */; };
+		1CF143DF2C6B6E2000DA34C3 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF143DE2C6B6E2000DA34C3 /* ScoreView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C05C72F2C68F8D800E7CC4B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		1C05C7332C68FB8B00E7CC4B /* ChoiceTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceTextView.swift; sourceTree = "<group>"; };
+		1C92518B2C5E5C7300CB3520 /* Neptunian Analytics Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neptunian Analytics Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C92518E2C5E5C7300CB3520 /* Neptunian_Analytics_QuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neptunian_Analytics_QuizApp.swift; sourceTree = "<group>"; };
+		1C9251902C5E5C7300CB3520 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		1C9251922C5E5C7400CB3520 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C9251952C5E5C7400CB3520 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1CF143AF2C6A131100DA34C3 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		1CF143D32C6A7CD500DA34C3 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		1CF143D52C6A82EA00DA34C3 /* GameColour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameColour.swift; sourceTree = "<group>"; };
+		1CF143D72C6A83C900DA34C3 /* BottomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTextView.swift; sourceTree = "<group>"; };
+		1CF143DA2C6AAC7200DA34C3 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		1CF143DC2C6AAF8A00DA34C3 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		1CF143DE2C6B6E2000DA34C3 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C9251882C5E5C7300CB3520 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C9251822C5E5C7300CB3520 = {
+			isa = PBXGroup;
+			children = (
+				1C92518D2C5E5C7300CB3520 /* Neptunian Analytics Quiz */,
+				1C92518C2C5E5C7300CB3520 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C92518C2C5E5C7300CB3520 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C92518B2C5E5C7300CB3520 /* Neptunian Analytics Quiz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C92518D2C5E5C7300CB3520 /* Neptunian Analytics Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				1CF143D92C6AAC5400DA34C3 /* ViewModels */,
+				1CF143B32C6A13AE00DA34C3 /* Views */,
+				1C92518E2C5E5C7300CB3520 /* Neptunian_Analytics_QuizApp.swift */,
+				1CF143B12C6A133300DA34C3 /* Models */,
+				1C9251922C5E5C7400CB3520 /* Assets.xcassets */,
+				1C9251942C5E5C7400CB3520 /* Preview Content */,
+			);
+			path = "Neptunian Analytics Quiz";
+			sourceTree = "<group>";
+		};
+		1C9251942C5E5C7400CB3520 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1C9251952C5E5C7400CB3520 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1CF143B12C6A133300DA34C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C05C72F2C68F8D800E7CC4B /* Question.swift */,
+				1CF143AF2C6A131100DA34C3 /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1CF143B32C6A13AE00DA34C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1CF143D52C6A82EA00DA34C3 /* GameColour.swift */,
+				1C9251902C5E5C7300CB3520 /* GameView.swift */,
+				1CF143DE2C6B6E2000DA34C3 /* ScoreView.swift */,
+				1C05C7332C68FB8B00E7CC4B /* ChoiceTextView.swift */,
+				1CF143D32C6A7CD500DA34C3 /* WelcomeView.swift */,
+				1CF143D72C6A83C900DA34C3 /* BottomTextView.swift */,
+				1CF143DC2C6AAF8A00DA34C3 /* QuestionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1CF143D92C6AAC5400DA34C3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1CF143DA2C6AAC7200DA34C3 /* GameViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C92518A2C5E5C7300CB3520 /* Neptunian Analytics Quiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C9251992C5E5C7400CB3520 /* Build configuration list for PBXNativeTarget "Neptunian Analytics Quiz" */;
+			buildPhases = (
+				1C9251872C5E5C7300CB3520 /* Sources */,
+				1C9251882C5E5C7300CB3520 /* Frameworks */,
+				1C9251892C5E5C7300CB3520 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Neptunian Analytics Quiz";
+			productName = "Neptunian Analytics Quiz";
+			productReference = 1C92518B2C5E5C7300CB3520 /* Neptunian Analytics Quiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C9251832C5E5C7300CB3520 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					1C92518A2C5E5C7300CB3520 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 1C9251862C5E5C7300CB3520 /* Build configuration list for PBXProject "Neptunian Analytics Quiz" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C9251822C5E5C7300CB3520;
+			productRefGroup = 1C92518C2C5E5C7300CB3520 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C92518A2C5E5C7300CB3520 /* Neptunian Analytics Quiz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C9251892C5E5C7300CB3520 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C9251962C5E5C7400CB3520 /* Preview Assets.xcassets in Resources */,
+				1C9251932C5E5C7400CB3520 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C9251872C5E5C7300CB3520 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF143DD2C6AAF8A00DA34C3 /* QuestionView.swift in Sources */,
+				1CF143DB2C6AAC7200DA34C3 /* GameViewModel.swift in Sources */,
+				1C05C7302C68F8D800E7CC4B /* Question.swift in Sources */,
+				1CF143D42C6A7CD500DA34C3 /* WelcomeView.swift in Sources */,
+				1CF143B02C6A131100DA34C3 /* Game.swift in Sources */,
+				1C9251912C5E5C7300CB3520 /* GameView.swift in Sources */,
+				1CF143D82C6A83C900DA34C3 /* BottomTextView.swift in Sources */,
+				1CF143DF2C6B6E2000DA34C3 /* ScoreView.swift in Sources */,
+				1C05C7342C68FB8B00E7CC4B /* ChoiceTextView.swift in Sources */,
+				1C92518F2C5E5C7300CB3520 /* Neptunian_Analytics_QuizApp.swift in Sources */,
+				1CF143D62C6A82EA00DA34C3 /* GameColour.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1C9251972C5E5C7400CB3520 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1C9251982C5E5C7400CB3520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C92519A2C5E5C7400CB3520 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Neptunian Analytics Quiz/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neptuniananalytics.Neptunian-Analytics-Quiz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C92519B2C5E5C7400CB3520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Neptunian Analytics Quiz/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neptuniananalytics.Neptunian-Analytics-Quiz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C9251862C5E5C7300CB3520 /* Build configuration list for PBXProject "Neptunian Analytics Quiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C9251972C5E5C7400CB3520 /* Debug */,
+				1C9251982C5E5C7400CB3520 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C9251992C5E5C7400CB3520 /* Build configuration list for PBXNativeTarget "Neptunian Analytics Quiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C92519A2C5E5C7400CB3520 /* Debug */,
+				1C92519B2C5E5C7400CB3520 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C9251832C5E5C7300CB3520 /* Project object */;
+}
