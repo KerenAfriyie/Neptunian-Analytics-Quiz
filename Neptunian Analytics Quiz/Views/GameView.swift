@@ -17,23 +17,24 @@ struct GameView: View {
         NavigationStack {
             ZStack {
                 GameColour.main.ignoresSafeArea()
-                VStack {
-                    Text(viewModel.questionProgressText)
-                        .font(.callout)
-                        .multilineTextAlignment(.leading)
-                        .padding()
-                    QuestionView(question: viewModel.currentQuestion)
+                    VStack {
+                        HomeButtonView()
+                        Text(viewModel.questionProgressText)
+                            .font(.callout)
+                            .multilineTextAlignment(.leading)
+                        QuestionView(question: viewModel.currentQuestion)
+                    }.padding()
+                    .padding(.top, 20)
                 }
-            }
-            .foregroundColor(.black)
-            .navigationBarHidden(true)
-            .environmentObject(viewModel)
-            .onChange(of: viewModel.gameIsOver) { oldValue, newValue in
-                navigateToGameOver = newValue
-            }
-            .navigationDestination(isPresented: $navigateToGameOver) {
-                ScoreView(viewModel: viewModel)
-            }
+                .foregroundColor(.black)
+                .navigationBarHidden(true)
+                .environmentObject(viewModel)
+                .onChange(of: viewModel.gameIsOver) { oldValue, newValue in
+                    navigateToGameOver = newValue
+                }
+                .navigationDestination(isPresented: $navigateToGameOver) {
+                    ScoreView(viewModel: viewModel)
+                }
 
         }
     }

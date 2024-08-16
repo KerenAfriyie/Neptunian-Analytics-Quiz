@@ -15,33 +15,34 @@ struct ScoreView: View {
         NavigationStack{
             ZStack {
                 GameColour.main.ignoresSafeArea()
-                VStack{VStack(alignment: .leading, spacing: 0){
+                VStack{VStack(alignment: .center, spacing: 0){
+                    HomeButtonView()
                     Text("Final Score")
                         .bold()
-                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                        .multilineTextAlignment(.leading)
                         .padding()
                     Text("\(viewModel.correctPercent, specifier: "%.2f")%")
                         .font(.largeTitle)
                         .bold()
                         .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                         .padding()
-                    Spacer()
-                }
+//                    Spacer()
+                }.padding(.bottom, 20)
                     VStack{VStack(alignment: .leading, spacing: 0){
                         HStack {
                             Text("\(viewModel.correctNumber)")
-                                .font(.title)
+                                .font(.largeTitle)
                             Image(systemName: "checkmark")
                                 .foregroundColor(.green)
-                                .font(.title)
+                                .font(.largeTitle)
                                 .bold()
                         }
                         HStack {
                             Text("\(viewModel.incorrectNumber)")
-                                .font(.title)
+                                .font(.largeTitle)
                             Image(systemName: "xmark.circle")
                                 .foregroundColor(.red)
-                                .font(.title)
+                                .font(.largeTitle)
                                 .bold()
                         }
                         .foregroundColor(.black)
@@ -52,6 +53,20 @@ struct ScoreView: View {
                             destination: GameView(),
                             label: {
                                 BottomTextView(str: "Retake quiz")
+                                    .foregroundColor(.black)
+                            })
+                        NavigationLink(
+                            destination: ReviewAnswersView(viewModel: viewModel),
+                            label: {
+                                HStack {
+                                    Spacer()
+                                    Text("Review Answers")
+                                        .font(.body)
+                                        .bold()
+                                        .padding()
+                                    Spacer()
+                                }.background(Color.white)
+                                    .padding()
                                     .foregroundColor(.black)
                             })
                     }

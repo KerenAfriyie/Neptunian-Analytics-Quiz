@@ -47,7 +47,10 @@ class GameViewModel: ObservableObject {
     var correctPercent: Double {
         game.correctPercentage
     }
-
+    
+    var guesses: [Question:Int]{
+        game.guesses
+    }
     
     // MARK: - Internal Methods
     // 2
@@ -57,6 +60,10 @@ class GameViewModel: ObservableObject {
     // 3
     func displayNextScreen() {
         game.updateGameStatus()
+    }
+    
+    var summary: [QuestionSummary]{
+        game.summary
     }
     
     func colour(forOptionIndex optionIndex: Int) -> Color {
@@ -72,5 +79,10 @@ class GameViewModel: ObservableObject {
                return GameColour.main
            }
        }
+    
+    }
 
-}
+
+
+
+

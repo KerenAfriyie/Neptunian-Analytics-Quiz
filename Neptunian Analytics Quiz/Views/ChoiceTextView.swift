@@ -15,10 +15,11 @@ struct ChoiceTextView: View {
           .font(.body)
           .bold()
           .multilineTextAlignment(.center)
-          .padding()
+          .padding(10)
           .border(GameColour.accent, width: 4)
     }
 }
+
 
 struct ChoiceTextView_Previews: PreviewProvider{
     static var previews: some View {

@@ -14,21 +14,44 @@ struct WelcomeView: View {
             ZStack{
                 GameColour.main.ignoresSafeArea()
                 VStack{
-                    Spacer()
-                    VStack(alignment: .leading, spacing: 0){
-                        Text("Select the correct answers to the following questions.")
-                            .font(.largeTitle)
-                            .bold()
-                            .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
-                            .padding()
+                    VStack{
+                        VStack(alignment: .leading, spacing: 0){
+                            Text("NEPTUNIAN ANALYTICS")
+                                .font(.title)
+                                .bold()
+                                .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                                .padding()
+                                .padding(.top, 100)
+                                .frame(maxWidth: .infinity)
+                            
+                            Text("PROGRAMMING QUIZ")
+                                .font(.title2)
+                                .bold()
+                                .multilineTextAlignment(.leading)
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                            
+                            Text("Select the correct answers to the following questions.")
+                                .font(.title3)
+                                .bold()
+                                .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                                .padding()
+                        }
+                        Divider()
+                        .frame(height: 2)
+                        .background(Color.black)
+                        .padding()
+                        
+                        Spacer()
+                        NavigationLink(
+                            destination: GameView(),
+                            label: {
+                                BottomTextView(str: "PLAY!")
+                            })
+                        Spacer()
                     }
-                    Spacer()
-                    NavigationLink(
-                        destination: GameView(),
-                        label: {
-                            BottomTextView(str: "Okay let's go!")
-                        })
                 } .foregroundColor(.black)
+
             }
         }
     }

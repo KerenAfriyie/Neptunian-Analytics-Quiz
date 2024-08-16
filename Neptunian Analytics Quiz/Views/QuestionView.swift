@@ -10,7 +10,7 @@ import SwiftUI
 struct QuestionView: View {
   
     @EnvironmentObject var viewModel: GameViewModel
-  let question: Question
+    let question: Question
   
   var body: some View {
     VStack {
@@ -19,7 +19,7 @@ struct QuestionView: View {
         .bold()
         .multilineTextAlignment(.leading)
       Spacer()
-      HStack {
+      VStack {
           ForEach(question.possibleAnswers.indices, id: \.self) { answerIndex in
           Button(action: {
             print("Tapped on option with the text: \(question.possibleAnswers[answerIndex])")
@@ -36,9 +36,9 @@ struct QuestionView: View {
             }
         }
     }
+    }
   }
-}
 
 //#Preview {
-//    QuestionView(question: Game().currentQuestion)
+//    QuestionView(viewModel: viewModel, question: Game().currentQuestion)
 //}

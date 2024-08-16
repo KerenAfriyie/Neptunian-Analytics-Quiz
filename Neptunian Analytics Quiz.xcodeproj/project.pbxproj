@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		1C05C7302C68F8D800E7CC4B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C05C72F2C68F8D800E7CC4B /* Question.swift */; };
 		1C05C7342C68FB8B00E7CC4B /* ChoiceTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C05C7332C68FB8B00E7CC4B /* ChoiceTextView.swift */; };
+		1C315EA02C6BEB590066B21E /* ReviewAnswersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C315E9F2C6BEB590066B21E /* ReviewAnswersView.swift */; };
+		1C315EA22C6C04580066B21E /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C315EA12C6C04580066B21E /* Summary.swift */; };
 		1C92518F2C5E5C7300CB3520 /* Neptunian_Analytics_QuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92518E2C5E5C7300CB3520 /* Neptunian_Analytics_QuizApp.swift */; };
 		1C9251912C5E5C7300CB3520 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9251902C5E5C7300CB3520 /* GameView.swift */; };
 		1C9251932C5E5C7400CB3520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9251922C5E5C7400CB3520 /* Assets.xcassets */; };
 		1C9251962C5E5C7400CB3520 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9251952C5E5C7400CB3520 /* Preview Assets.xcassets */; };
+		1CA5202E2C6F7AD700A1B956 /* HomeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5202D2C6F7AD700A1B956 /* HomeButtonView.swift */; };
 		1CF143B02C6A131100DA34C3 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF143AF2C6A131100DA34C3 /* Game.swift */; };
 		1CF143D42C6A7CD500DA34C3 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF143D32C6A7CD500DA34C3 /* WelcomeView.swift */; };
 		1CF143D62C6A82EA00DA34C3 /* GameColour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF143D52C6A82EA00DA34C3 /* GameColour.swift */; };
@@ -25,11 +28,14 @@
 /* Begin PBXFileReference section */
 		1C05C72F2C68F8D800E7CC4B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		1C05C7332C68FB8B00E7CC4B /* ChoiceTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceTextView.swift; sourceTree = "<group>"; };
+		1C315E9F2C6BEB590066B21E /* ReviewAnswersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewAnswersView.swift; sourceTree = "<group>"; };
+		1C315EA12C6C04580066B21E /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
 		1C92518B2C5E5C7300CB3520 /* Neptunian Analytics Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neptunian Analytics Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C92518E2C5E5C7300CB3520 /* Neptunian_Analytics_QuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neptunian_Analytics_QuizApp.swift; sourceTree = "<group>"; };
 		1C9251902C5E5C7300CB3520 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		1C9251922C5E5C7400CB3520 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C9251952C5E5C7400CB3520 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1CA5202D2C6F7AD700A1B956 /* HomeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonView.swift; sourceTree = "<group>"; };
 		1CF143AF2C6A131100DA34C3 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		1CF143D32C6A7CD500DA34C3 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		1CF143D52C6A82EA00DA34C3 /* GameColour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameColour.swift; sourceTree = "<group>"; };
@@ -92,6 +98,7 @@
 			children = (
 				1C05C72F2C68F8D800E7CC4B /* Question.swift */,
 				1CF143AF2C6A131100DA34C3 /* Game.swift */,
+				1C315EA12C6C04580066B21E /* Summary.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -106,6 +113,8 @@
 				1CF143D32C6A7CD500DA34C3 /* WelcomeView.swift */,
 				1CF143D72C6A83C900DA34C3 /* BottomTextView.swift */,
 				1CF143DC2C6AAF8A00DA34C3 /* QuestionView.swift */,
+				1C315E9F2C6BEB590066B21E /* ReviewAnswersView.swift */,
+				1CA5202D2C6F7AD700A1B956 /* HomeButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,11 +200,14 @@
 				1CF143DD2C6AAF8A00DA34C3 /* QuestionView.swift in Sources */,
 				1CF143DB2C6AAC7200DA34C3 /* GameViewModel.swift in Sources */,
 				1C05C7302C68F8D800E7CC4B /* Question.swift in Sources */,
+				1C315EA22C6C04580066B21E /* Summary.swift in Sources */,
 				1CF143D42C6A7CD500DA34C3 /* WelcomeView.swift in Sources */,
 				1CF143B02C6A131100DA34C3 /* Game.swift in Sources */,
 				1C9251912C5E5C7300CB3520 /* GameView.swift in Sources */,
 				1CF143D82C6A83C900DA34C3 /* BottomTextView.swift in Sources */,
+				1C315EA02C6BEB590066B21E /* ReviewAnswersView.swift in Sources */,
 				1CF143DF2C6B6E2000DA34C3 /* ScoreView.swift in Sources */,
+				1CA5202E2C6F7AD700A1B956 /* HomeButtonView.swift in Sources */,
 				1C05C7342C68FB8B00E7CC4B /* ChoiceTextView.swift in Sources */,
 				1C92518F2C5E5C7300CB3520 /* Neptunian_Analytics_QuizApp.swift in Sources */,
 				1CF143D62C6A82EA00DA34C3 /* GameColour.swift in Sources */,

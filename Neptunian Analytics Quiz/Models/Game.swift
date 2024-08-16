@@ -13,6 +13,7 @@ struct Game {
     private(set) var isOver = false
     private let questions = Question.allQuestions.shuffled()
     private(set) var correctPercentage = 0.0
+    private(set) var summary: [QuestionSummary] = []
     
     var guessCount: (correct: Int, incorrect: Int) {
         var count: (correct: Int, incorrect: Int) = (0, 0)
@@ -34,6 +35,14 @@ struct Game {
         return questions[currentQuestionIndex]
     }
     
+    var correctNumber: Int {
+        return guessCount.correct
+    }
+    
+    var incorrectNumber: Int {
+        return guessCount.incorrect
+    }
+    
     mutating func makeGuessForCurrentQuestion(atIndex index: Int) {
         guesses[currentQuestion] = index
     }
@@ -44,6 +53,7 @@ struct Game {
         } else {
             isOver = true
             correctPercent()
+            collectResults()
         }
     }
     
@@ -55,12 +65,42 @@ struct Game {
             correctPercentage = 0.0
         }
     }
+
     
-    var correctNumber: Int {
-        return guessCount.correct
-    }
+//    mutating func collectResults() {
+//        var results: [QuestionSummary] = []
+//        
+//        for (index, question) in questions.enumerated() {
+//            // Check if the question was answered
+//            if let selectedAnswerIndex = guesses[question] {
+//                let result = QuestionSummary(
+//                    questionIndex: index,
+//                    answerSelectedIndex: selectedAnswerIndex,
+//                    correctAnswerIndex: question.correctAnswerIndex
+//                )
+//                results.append(result)
+//            }
+//        }
+//        summary = results
+//    }
     
-    var incorrectNumber: Int {
-        return guessCount.incorrect
+    mutating  func collectResults() {
+        var results: [QuestionSummary] = []
+
+        for (index, question) in questions.enumerated() {
+            if let selectedAnswerIndex = guesses[question] {
+                let result = QuestionSummary(
+                    question: question,
+                    questionIndex: index,
+                    answerSelectedIndex: selectedAnswerIndex,
+                    correctAnswerIndex: question.correctAnswerIndex
+                )
+                results.append(result)
+            }
+        }
+        summary = results
     }
+
+    
+    
 }
