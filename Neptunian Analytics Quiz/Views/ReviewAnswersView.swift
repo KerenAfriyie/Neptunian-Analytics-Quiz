@@ -71,8 +71,6 @@ struct ReviewAnswersView: View {
 
 struct ReviewAnswersView_Previews: PreviewProvider {
     static var previews: some View {
-        // Initialize GameViewModel with sample data
         let viewModel = GameViewModel()
-        // You may want to configure the viewModel with test data if needed
         ReviewAnswersView(viewModel: viewModel)
     }}

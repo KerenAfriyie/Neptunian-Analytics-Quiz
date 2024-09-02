@@ -21,11 +21,13 @@ struct ScoreView: View {
                         .bold()
                         .multilineTextAlignment(.leading)
                         .padding()
+                        .foregroundColor(.black)
                     Text("\(viewModel.correctPercent, specifier: "%.2f")%")
                         .font(.largeTitle)
                         .bold()
                         .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                         .padding()
+                        .foregroundColor(.black)
 //                    Spacer()
                 }.padding(.bottom, 20)
                     VStack{VStack(alignment: .leading, spacing: 0){
@@ -36,7 +38,7 @@ struct ScoreView: View {
                                 .foregroundColor(.green)
                                 .font(.largeTitle)
                                 .bold()
-                        }
+                        }.foregroundColor(.black)
                         HStack {
                             Text("\(viewModel.incorrectNumber)")
                                 .font(.largeTitle)
@@ -46,7 +48,6 @@ struct ScoreView: View {
                                 .bold()
                         }
                         .foregroundColor(.black)
-                        .navigationBarHidden(true)
                     }
                         Spacer()
                         NavigationLink(
@@ -77,8 +78,6 @@ struct ScoreView: View {
 }
 struct ScoreView_Previews: PreviewProvider {
     static var previews: some View {
-        // Initialize GameViewModel with sample data
         let viewModel = GameViewModel()
-        // You may want to configure the viewModel with test data if needed
         ScoreView(viewModel: viewModel)
     }}

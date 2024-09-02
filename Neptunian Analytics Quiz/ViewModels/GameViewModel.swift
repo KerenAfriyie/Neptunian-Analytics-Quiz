@@ -52,6 +52,10 @@ class GameViewModel: ObservableObject {
         game.guesses
     }
     
+    var summary: [QuestionSummary]{
+        game.summary
+    }
+    
     // MARK: - Internal Methods
     // 2
     func makeGuess(atIndex index: Int) {
@@ -60,10 +64,6 @@ class GameViewModel: ObservableObject {
     // 3
     func displayNextScreen() {
         game.updateGameStatus()
-    }
-    
-    var summary: [QuestionSummary]{
-        game.summary
     }
     
     func colour(forOptionIndex optionIndex: Int) -> Color {

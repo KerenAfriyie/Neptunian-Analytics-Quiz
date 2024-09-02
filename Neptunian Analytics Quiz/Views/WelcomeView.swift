@@ -49,7 +49,7 @@ struct WelcomeView: View {
                                 BottomTextView(str: "PLAY!")
                             })
                         Spacer()
-                    }
+                    }.navigationBarHidden(true)
                 } .foregroundColor(.black)
 
             }
