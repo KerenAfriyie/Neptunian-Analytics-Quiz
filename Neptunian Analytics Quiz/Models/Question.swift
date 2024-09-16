@@ -15,7 +15,7 @@ struct Question: Hashable {
     let correctAnswerIndex: Int
     
     static var allQuestions = [
-            Question(questionText: "What term matches the definition 'A computer language used to write programs in a specific field",
+            Question(questionText: "What term matches the definition 'A computer language used to write programs in a specific field'?",
                      possibleAnswers: [
                         "General-purpose programming language",
                         "High-level programming language",

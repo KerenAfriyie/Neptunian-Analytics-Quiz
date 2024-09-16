@@ -72,7 +72,7 @@ struct ScoreView: View {
                             })
                     }
                 }
-            }
+            }.navigationBarBackButtonHidden(true)
         }
     }
 }
